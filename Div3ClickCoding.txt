@@ -1,0 +1,23 @@
+ <script>
+    let div3Content = [];
+    div3Content[0]="Following steps below";
+    div3Content[1]="Create a gighub";
+    div3Content[2]="CC";
+    div3Content[3]="D";
+    div3Content[4]="E";
+    div3Content[5]="f";
+    div3Content[6]="G";
+    function replaceContent(letter) {
+      var rightColumn = document.querySelector('#div3 .right-column');
+      rightColumn.innerHTML = letter;
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      var listItems = document.querySelectorAll('#div3 .left-column li');
+      listItems.forEach(function(item, i) {
+        item.addEventListener('click', function() {
+          replaceContent(div3Content[i]);
+        });
+      });
+    });
+  </script>

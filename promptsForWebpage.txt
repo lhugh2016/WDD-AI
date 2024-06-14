@@ -1,0 +1,62 @@
+1. Create a webpage "Welcome to ASU"
+
+2. create a <main> block. The width is 100%. The background color 
+   is lightgreen. Inisde <main>, create 20 <div>'s 
+   with id = "div1" to "div20".
+
+3. Add a banner "Welcome to my webpage" to the top. The background 
+   color is light gray. The top padding is 30px. The bottom padding 
+   is 20px. The content is at the center. 
+
+4. inside <div id="div1">, add a left column. The width is 60%. 
+   Place an image "image1.jpg" inside it. The width of the image is 100%.
+   Please add prefix "div1_" to all styles for elements inside <div id="div1">.
+
+5. Remove padding and margins for all <div>'s and <main>.
+6. inside <div id="div1">, add a right column. The width is 40%. 
+   Inside it, add a headline saying "AI is working". Then, add a paragraph 
+   "Summer 2024, WDD Using AI at Albany State University". Then, add 
+   a link below that links to https://www.asurams.edu..
+	Please add prefix "div1_" to all styles for elements inside <div id="div1">.
+
+
+7. Inside <div id="div1">, the right colum is displayed under the left column. 
+   I want they display side by side.
+	Please add prefix "div1_" to all styles for elements inside <div id="div1">.
+
+
+8. Inside <div id="div2">, add a list of four name cards. They will display 
+   side by side on the same line. Each name card has a picture on top and three 
+   lines of information at the bottom.
+	Please add prefix "div1_" to all styles for elements inside <div id="div1">.
+
+
+9. There is a problem. The four name cards inside <div id="div2"> are not 
+   displayed from left to right. They are displayed from top to bottom. 
+   Please correct that.
+
+10. Inside <div id="div2">, when clicking on the first name card, 
+    open a new webpage "screwDriver.html".
+
+11. inisde <div id="div3">, add a left column. The width is 25%. Inside it, 
+    add a headline 2, "Table of contents". Then add an unordered list with list 
+    items "A", "B", "C", "D", "E", "F", "G". Do not add list item type.
+	Please add prefix "div1_" to all styles for elements inside <div id="div1">.
+
+
+12. Inside <div id="div3">, add a right column. The width is 75%. Inside it, 
+    it display a headline 2 "AAAAA" and a paragraph "AAAAA AAAAA AAAAA AAAAA".
+	Please add prefix "div1_" to all styles for elements inside <div id="div1">.
+
+13. The left column and the right column must be on the same line.
+
+14. Inside <div id="div3">, When clicking on "A", you will replace the content in the right column by 
+    headline 2 of 5 A's, and a paragraph of 20 A's. However, when clicking on "B", 
+    you will replace the content in the right column by headline 2 of 5 B's, and 
+    a paragraph of 20 B's, and so on.
+	Please add prefix "div1_" to all functions for elements inside <div id="div1">.
+
+15. Inside <div id="div4", add image "div4.jpg". The width is 100%. The height is 75%. 
+    Then, add a paragraph "My Dream Vacation" on the top right corner of the image.
+	Please add prefix "div1_" to all styles for elements inside <div id="div1">.
+

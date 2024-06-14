@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to ASU</title>
+  <style>
+    body {
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .banner {
+      background-color: lightgray;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    main {
+      padding: 0;
+    }
+    
+    div {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      border: 1px solid black;
+    }
+    
+    .left-column {
+      width: 60%;
+    }
+    
+    .left-column img {
+      width: 100%;
+    }
+    
+    .right-column {
+      width: 40%;
+    }
+    
+    .right-column h2 {
+      margin-top: 0;
+    }
+    
+    .right-column p {
+      margin-bottom: 10px;
+    }
+    
+    .right-column ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    
+    .columns {
+      display: flex;
+    }
+    
+    #div2 {
+      display: flex;
+      position: relative;
+
+    }
+    
+    .name-card-container {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+
+      transition: transform 0.5s ease;
+/*
+      position: absolute;
+      left: 0;
+*/
+      }
+    
+    .name-card {
+      flex: 0 0 25%;
+      padding: 10px; 
+      text-align: center;
+      border: 1px solid black;
+ /*     margin-right: 10px;  */
+      cursor: pointer;
+    }
+    
+    .name-card img {
+      width: 100%;
+      height: 75%;
+    }
+    
+    .name-card p {
+      margin: 5px 0;
+    }
+
+
+    
+
+    .left-column {
+      width: 75%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    
+    .left-column h2 {
+      margin-top: 0;
+    }
+    
+    .left-column ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .left-column li {
+      margin-bottom: 5px;
+    }
+
+
+    .right-column {
+      width: 25%;
+      display: inline-block;
+      vertical-align: top;
+
+    }
+    
+    .right-column h2 {
+      margin-top: 0;
+    }
+    
+    .right-column p {
+      margin-bottom: 10px;
+    }
+
+    #div3 {
+      display: flex;
+    }
+
+    #div3 .left-column {
+      width: 25%;
+    }
+    
+    #div3 .right-column {
+      width: 75%;
+    }
+
+    .arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: lightgray;
+      border: 1px solid black;
+      cursor: pointer;
+     /* position: absolute;
+      top: 50%; */
+      
+      transform: translateY(-50%);
+    }
+    
+    .arrow:hover {
+      background-color: gray;
+    }
+    
+    .arrow img {
+      width: 20px;
+      height: 20px;
+    }
+    
+
+    #left-arrow {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-left: 10px;
+    }
+    
+    #right-arrow {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-right: 10px;
+    }
+
+    #div4 {
+      position: relative;
+      background-image: url('div4.jpg');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    #div4 p {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5px;
+      font-weight: bold;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1>Welcome to my webpage</h1>
+  </div>
+  
+  <main>
+
+    <div id="div3">
+      <div class="left-column">
+        <h2>Table of contents</h2>
+        <ul>
+          <li>Install GIT/VSC</li>
+          <li>Github and a repository</li>
+          <li>VSC and OpenAI</li>
+          <li>Loss, Cost, Linear Regression</li>
+          <li>Neuron and Artificial Neuron</li>
+          <li>Artificial Neural Network Models</li>
+          <li>Batch and Eoch</li>
+          <li>Gradient Descent</li>
+          <li>Dataset For Training</li>
+          <li>Define The Model</li>
+        </ul>
+      </div>  
+
+      <div class="right-column">
+        <h2>AAAAA</h2>
+        <p>AAAAA AAAAA AAAAA AAAAA</p>
+      </div>
+
+    </div>
+
+
+
+
+
+    <div id="div1">
+      <div class="columns">
+        <div class="left-column">
+          <img src="image1.jpg" alt="Image 1">
+        </div>
+
+      
+        <div class="right-column">
+          <h2>AI is working</h2>
+          <p>Summer 2024, WDD Using AI at Albany State University</p>
+          <a href="https://www.asurams.edu">Visit ASU Website</a>
+          <p>A webpage is a stack of &lt;div&gt;'s. Each &lt;div&gt; is a block that is designed separately. There are four styles for each &lt;div&gt;.</p>
+          <ul>
+            <li>Brief room style: like whitehouse webpage</li>
+            <li>Lowe's style that lists categories of products</li>
+            <li>Artist style that shows a very meaningful picture with some description</li>
+            <li>Documentation style such as a university catalog</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="div2">
+      
+      <div class="arrow" id="left-arrow">
+        <img src="left-arrow.png" alt="Left Arrow">
+      </div>
+
+      <div class="name-card-container">
+        <div class="name-card" onclick="openScrewDriverPage()">
+          <img src="cat1.jfif" alt="Product: Screw Drivers">
+          <p>Name: Tyler Alls</p>
+          <p>Grade: 10</p>
+          <p>School: Westover High School</p>
+        </div>
+        <div class="name-card">
+          <img src="cat2.jfif" alt="Product: Screw Drivers">
+          <p>Name: Briana Andrews</p>
+          <p>Grade: 8</p>
+          <p>School: Robert Cross Middle</p>
+        </div>
+        <div class="name-card">
+          <img src="cat3.jfif" alt="Product: Lawn Mower">
+          <p>Name: Kurt Bland</p>
+          <p>Grade: 6</p>
+          <p>School: Robert Croos Middle School</p>
+        </div>
+        <div class="name-card">
+          <img src="cat4.jfif" alt="Product: Grill">
+          <p>Name: Cohen Carr</p>
+          <p>Grade: 9</p>
+          <p>School: Lee County High School</p>
+        </div>
+        
+        <!-- Add 21 more name cards here -->
+        <div class="name-card">
+          <img src="cat5.jfif" alt="Product: Name Card 5">
+          <p>Name: Bathula Daniel</p>
+          <p>Grade: 12</p>
+          <p>School: Lee County High School</p>
+        </div>
+        <div class="name-card">
+          <img src="cat6.jfif" alt="Product: Name Card 6">
+          <p>Name: Crump Daniel</p>
+          <p>Grade: 7</p>
+          <p>School: Home School</p>
+        </div>
+        <div class="name-card">
+          <img src="cat7.jfif" alt="Product: Name Card 7">
+          <p>Name: Ma'Kyiah Evans</p>
+          <p>Grade: 9</p>
+          <p>School: Westover High School</p>
+
+        </div>
+        <div class="name-card">
+          <img src="cat8.jfif" alt="Product: Name Card 8">
+          <p>Name: Kristopher Fussel</p>
+          <p>Grade: 10</p>
+          <p>School: Westover High School</p>
+
+        </div>
+        <div class="name-card">
+          <img src="cat9.jfif" alt="Product: Name Card 9">
+          <p>Name: Reagan Harris</p>
+          <p>Grade: 9</p>
+          <p>School: Sherwood Christian Academy</p>
+        </div>
+        <div class="name-card">
+          <img src="cat10.jfif" alt="Product: Name Card 10">
+          <p>Name: Ryan Harris</p>
+          <p>Grade: 9</p>
+          <p>School: Sherwood Christian Academy</p>
+        </div>
+        <div class="name-card">
+          <img src="dog1.jfif" alt="Product: Name Card 11">
+          <p>Name: Aryanna Linnear</p>
+          <p>Grade: 10</p>
+          <p>School: GACA</p>
+        </div>
+        <div class="name-card">
+          <img src="dog2.jfif" alt="Product: Name Card 12">
+          <p>Name: Travor Mandouma</p>
+          <p>Grade: X</p>
+          <p>School: XXX</p>
+
+        </div>
+        <div class="name-card">
+          <img src="dog3.jfif" alt="Product: Name Card 13">
+          <p>Name: KyDence Mccoy</p>
+          <p>Grade: 7</p>
+          <p>School: Albany Middle School</p>
+        </div>
+        <div class="name-card">
+          <img src="dog4.jfif" alt="Product: Name Card 14">
+          <p>Name: Jocquell McDaniel</p>
+          <p>Grade: 10</p>
+          <p>School: Clarkston High School</p>
+
+        </div>
+        <div class="name-card">
+          <img src="dog5.jfif" alt="Product: Name Card 15">
+          <p>Name: Holmes Nykeli</p>
+          <p>Grade: 7</p>
+          <p>School: Robert Croos Middle School</p>
+        </div>
+        <div class="name-card">
+          <img src="dog6.jfif" alt="Product: Name Card 16">
+          <p>Name: Daniella Okafor</p>
+          <p>Grade: 6</p>
+          <p>School: Robert Croos Middle School</p>
+
+        </div>
+        <div class="name-card">
+          <img src="dog7.jfif" alt="Product: Name Card 17">
+          <p>Name: Arnov Paudel</p>
+          <p>Grade: 7</p>
+          <p>School: Lee County Middle School</p>
+        </div>
+        <div class="name-card">
+          <img src="dog8.jfif" alt="Product: Name Card 18">
+          <p>Name: Diya Paudel</p>
+          <p>Grade: 7</p>
+          <p>School: Lee County Middle School</p>
+        </div>
+        <div class="name-card">
+          <img src="dog9.jfif" alt="Product: Name Card 19">
+          <p>Name: Kurt Bland</p>
+          <p>Grade: 6</p>
+          <p>School: Robert Croos Middle School</p>
+        </div>
+        <div class="name-card">
+          <img src="dog10.jfif" alt="Product: Name Card 20">
+          <p>Name: Kurt Bland</p>
+          <p>Grade: 6</p>
+          <p>School: Robert Croos Middle School</p>
+        </div>
+        <div class="name-card">
+          <img src="dog11.jfif" alt="Product: Name Card 21">
+          <p>Name: Kurt Bland</p>
+          <p>Grade: 6</p>
+          <p>School: Robert Croos Middle School</p>
+        </div>
+
+      </div>
+      <div class="arrow" id="right-arrow">
+        <img src="right-arrow.png" alt="Right Arrow">
+      </div>
+    
+
+    </div>    
+    
+
+
+    <div id="div4">
+      <img src="div4.jpg" alt="Image" style="width: 100%; height: 75%;">
+      <p style="position: absolute; top: 0; right: 0; margin: 10px;">My Dream Vacation</p>
+    </div>
+
+
+
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <div id="div7"></div>
+    <div id="div8"></div>
+    <div id="div9"></div>
+    <div id="div10"></div>
+    <div id="div11"></div>
+    <div id="div12"></div>
+    <div id="div13"></div>
+    <div id="div14"></div>
+    <div id="div15"></div>
+    <div id="div16"></div>
+    <div id="div17"></div>
+    <div id="div18"></div>
+    <div id="div19"></div>
+    <div id="div20"></div>
+  </main>
+
+
+
+
+  <script>
+    function openScrewDriverPage() {
+      window.open("screwDriver.html", "_blank");
+    }
+  </script>
+  
+  <script>
+    let div3Content = [];
+    div3Content[0]="Following steps below";
+    div3Content[1]="Create a gighub";
+    div3Content[2]="CC";
+    div3Content[3]="D";
+    div3Content[4]="E";
+    div3Content[5]="f";
+    div3Content[6]="G";
+    function replaceContent(letter) {
+      var rightColumn = document.querySelector('#div3 .right-column');
+      rightColumn.innerHTML = letter;
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      var listItems = document.querySelectorAll('#div3 .left-column li');
+      listItems.forEach(function(item, i) {
+        item.addEventListener('click', function() {
+          replaceContent(div3Content[i]);
+        });
+      });
+    });
+  </script>
+
+  <script>
+    function navigateLeft() {
+      var container = document.querySelector('.name-card-container');
+      var containerWidth = container.offsetWidth;
+      var scrollAmount = containerWidth / 4;
+      container.scrollLeft -= scrollAmount;
+    }
+    
+    function navigateRight() {
+      var container = document.querySelector('.name-card-container');
+      var containerWidth = container.offsetWidth;
+      var scrollAmount = containerWidth / 4;
+      container.scrollLeft += scrollAmount;
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      var leftArrow = document.querySelector('#left-arrow');
+      var rightArrow = document.querySelector('#right-arrow');
+      
+      leftArrow.addEventListener('click', navigateLeft);
+      rightArrow.addEventListener('click', navigateRight);
+    });
+  </script>
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to ASU</title>
+  <style>
+    #div2 {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .name-card-container {
+      display: flex;
+      width: 100%;
+      transition: transform 0.5s ease;
+/*
+      position: absolute;
+      left: 0;
+*/
+      }
+    
+    .name-card {
+      flex: 0 0 25%;
+      padding: 10px; 
+      text-align: center;
+      border: 1px solid black;
+ /*     margin-right: 10px;  */
+      cursor: pointer;
+    }
+    
+    .name-card img {
+      width: 100%;
+    }
+    
+    .name-card p {
+      margin: 5px 0;
+    }
+
+
+    
+
+    .arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: lightgray;
+      border: 1px solid black;
+      cursor: pointer;
+     /* position: absolute;
+      top: 50%; */
+      
+      transform: translateY(-50%);
+    }
+    
+    .arrow:hover {
+      background-color: gray;
+    }
+    
+    .arrow img {
+      width: 20px;
+      height: 20px;
+    }
+    
+
+    #left-arrow {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-left: 10px;
+    }
+    
+    #right-arrow {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+
+    <div id="div2">
+      
+      <div class="arrow" id="left-arrow">
+        <img src="left-arrow.png" alt="Left Arrow">
+      </div>
+
+      <div class="name-card-container">
+        <div class="name-card" onclick="openScrewDriverPage()">
+          <img src="div2_p1.png" alt="Product: Screw Drivers">
+          <p>Product: Screw Drivers</p>
+          <p>On sale: 40% off</p>
+          <p>Price range: $80-$300</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p2.jpg" alt="Product: Screw Drivers">
+          <p>Product: Screw Drivers</p>
+          <p>On sale: 70% off</p>
+          <p>Price range: $100-$200</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p3.jpg" alt="Product: Lawn Mower">
+          <p>Product: Lawn Mower</p>
+          <p>On sale: 20% off</p>
+          <p>Price range: $250-$600</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p4.jpg" alt="Product: Grill">
+          <p>Product: Grill</p>
+          <p>On sale: 50% off</p>
+          <p>Price range: $50-$120</p>
+        </div>
+        
+        <!-- Add 21 more name cards here -->
+        <div class="name-card">
+          <img src="div2_p5.jpg" alt="Product: Name Card 5">
+          <p>Product: Name Card 5</p>
+          <p>On sale: 10% off</p>
+          <p>Price range: $50-$100</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p6.jpg" alt="Product: Name Card 6">
+          <p>Product: Name Card 6</p>
+          <p>On sale: 30% off</p>
+          <p>Price range: $80-$150</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p7.jpg" alt="Product: Name Card 7">
+          <p>Product: Name Card 7</p>
+          <p>On sale: 15% off</p>
+          <p>Price range: $70-$120</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p8.jpg" alt="Product: Name Card 8">
+          <p>Product: Name Card 8</p>
+          <p>On sale: 25% off</p>
+          <p>Price range: $90-$200</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p9.jpg" alt="Product: Name Card 9">
+          <p>Product: Name Card 9</p>
+          <p>On sale: 20% off</p>
+          <p>Price range: $60-$130</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p10.jpg" alt="Product: Name Card 10">
+          <p>Product: Name Card 10</p>
+          <p>On sale: 40% off</p>
+          <p>Price range: $80-$300</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p11.jpg" alt="Product: Name Card 11">
+          <p>Product: Name Card 11</p>
+          <p>On sale: 10% off</p>
+          <p>Price range: $50-$100</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p12.jpg" alt="Product: Name Card 12">
+          <p>Product: Name Card 12</p>
+          <p>On sale: 30% off</p>
+          <p>Price range: $80-$150</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p13.jpg" alt="Product: Name Card 13">
+          <p>Product: Name Card 13</p>
+          <p>On sale: 15% off</p>
+          <p>Price range: $70-$120</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p14.jpg" alt="Product: Name Card 14">
+          <p>Product: Name Card 14</p>
+          <p>On sale: 25% off</p>
+          <p>Price range: $90-$200</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p15.jpg" alt="Product: Name Card 15">
+          <p>Product: Name Card 15</p>
+          <p>On sale: 20% off</p>
+          <p>Price range: $60-$130</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p16.jpg" alt="Product: Name Card 16">
+          <p>Product: Name Card 16</p>
+          <p>On sale: 40% off</p>
+          <p>Price range: $80-$300</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p17.jpg" alt="Product: Name Card 17">
+          <p>Product: Name Card 17</p>
+          <p>On sale: 10% off</p>
+          <p>Price range: $50-$100</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p18.jpg" alt="Product: Name Card 18">
+          <p>Product: Name Card 18</p>
+          <p>On sale: 30% off</p>
+          <p>Price range: $80-$150</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p19.jpg" alt="Product: Name Card 19">
+          <p>Product: Name Card 19</p>
+          <p>On sale: 15% off</p>
+          <p>Price range: $70-$120</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p20.jpg" alt="Product: Name Card 20">
+          <p>Product: Name Card 20</p>
+          <p>On sale: 25% off</p>
+          <p>Price range: $90-$200</p>
+        </div>
+        <div class="name-card">
+          <img src="div2_p21.jpg" alt="Product: Name Card 21">
+          <p>Product: Name Card 21</p>
+          <p>On sale: 20% off</p>
+          <p>Price range: $60-$130</p>
+        </div>
+
+      </div>
+      <div class="arrow" id="right-arrow">
+        <img src="right-arrow.png" alt="Right Arrow">
+      </div>
+    
+
+    </div>    
+    
+
+  </main>
+
+
+  <script>
+    function navigateLeft() {
+      var container = document.querySelector('#div2');
+      var containerWidth = container.offsetWidth;
+      var scrollAmount = containerWidth / 4;
+      container.scrollLeft -= scrollAmount;
+    }
+    
+    function navigateRight() {
+      var container = document.querySelector('#div2');
+      var containerWidth = container.offsetWidth;
+      var scrollAmount = containerWidth / 4;
+      container.scrollLeft += scrollAmount;
+	alert("Scrollleft="+container.scrollLeft+","+scrollAmount);
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      var leftArrow = document.querySelector('#left-arrow');
+      var rightArrow = document.querySelector('#right-arrow');
+      
+      leftArrow.addEventListener('click', navigateLeft);
+      rightArrow.addEventListener('click', navigateRight);
+    });
+  </script>
+  </script>
+
+</body>
+</html>
